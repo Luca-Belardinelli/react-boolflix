@@ -1,3 +1,26 @@
-.postiem {
+/* REGOLE DEFAUL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* REGOLE HEADER */
+
+header {
+    background-color: black;
+    color: white;
+}
+
+
+/* REGOLE MAIN */
+
+.container {
+    display: flex;
+}
+
+.filmcard {
     width: 100%;
 }

@@ -10,7 +10,7 @@ export default function Header() {
 
     // GESTIONE INFORMAZIONI RACCOLTE DAI CAMPI FORM
     const [formData, setFormData] = useState(initialFormData);
-    const { fetchData } = useContext(CountContext);
+    const { fetchFilms } = useContext(CountContext);
 
     // FUNZIONE GESTIONE CAMPI
     function handleFormData(e) {
@@ -23,7 +23,7 @@ export default function Header() {
     // FUNZIONE DI GESTIONE DELL'INVIO FORM
     function handleSubmit(e) {
         e.preventDefault();
-        fetchData(formData.cerca);
+        fetchFilms(formData.cerca);
     }
 
 
