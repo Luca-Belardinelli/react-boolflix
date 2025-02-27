@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useState, useContext } from "react";
 import CountContext from "./../contexts/CountContext"
 
 
@@ -40,6 +40,7 @@ export default function Header() {
                     placeholder='Cerca'
                 />
             </form>
+            <button>Cerca</button>
         </header>
     );
 
