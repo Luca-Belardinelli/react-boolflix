@@ -17,18 +17,29 @@ export default function FilmList() {
     return (
         <>
             {/* film */}
-            {
-                films.map((film) => (
-                    <Filmcard key={film.id} film={film} />
-                ))
-            }
+
+            <div className="container">
+
+                {
+                    films.map((film) => (
+                        <Filmcard key={film.id} film={film} />
+                    ))
+                }
+
+            </div >
 
             {/* serie */}
-            {
-                series.map((serie) => (
-                    <Filmcard key={serie.id} serie={serie} />
-                ))
-            }
+
+            <div className="container">
+
+                {
+                    series.map((serie) => (
+                        <Filmcard key={serie.id} serie={serie} />
+                    ))
+                }
+
+            </div >
+
         </>
     );
 }

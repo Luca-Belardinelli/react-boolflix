@@ -29,7 +29,7 @@ export default function Header() {
 
     return (
         <header className="navbar">
-            <h1>BoolFlix</h1>
+            <h1 id="logo">BoolFlix</h1>
             <form onSubmit={handleSubmit}>
                 {/* RICERCA */}
                 <input

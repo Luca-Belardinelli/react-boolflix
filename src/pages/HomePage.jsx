@@ -4,8 +4,10 @@ import FilmList from "../components/FilmsList";
 export default function HomePage() {
 
     return (
-        <>
-            <FilmList />
-        </>
+        <main>
+            <div className="Home">
+                <FilmList />
+            </div>
+        </main >
     );
 }

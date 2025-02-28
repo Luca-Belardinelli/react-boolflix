@@ -14,23 +14,43 @@ body {
 
 .navbar {
     background-color: black;
-    color: red;
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 100px;
 }
 
+#logo {
+    color: red;
+    font-size: 50px;
+}
+
+
+button {
+    margin-left: 5px;
+    padding: 3px;
+}
+
 
 /* REGOLE MAIN */
 
 .container {
-    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 100px;
+}
+
+.imgf {
+    width: 70%;
 }
 
 
-.filmcard {
-    width: 40%;
-    height: 200px;
+.card {
+    width: 20%;
     color: white;
+    padding-bottom: 50px;
+}
+
+.flag {
+    width: 50px;
 }
