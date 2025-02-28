@@ -43,7 +43,7 @@ function App() {
 
 
 
-    //gestione chiamate API per le SERIE TV
+    //CHIAMATA API SERIE TV
     axios.get("https://api.themoviedb.org/3/search/tv", {
       params: {
         api_key: api_key,
@@ -59,7 +59,7 @@ function App() {
 
   }
 
-  useEffect(() => fetchFilms(''), []);
+  useEffect(() => fetchFilms(), []);
 
   return (
     <>

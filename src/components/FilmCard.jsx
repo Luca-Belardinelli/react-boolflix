@@ -27,7 +27,7 @@ export default function FilmCard({ film, serie }) {
 
             {serie && (
 
-                <div key={serie.name}>
+                <div key={serie.id}>
                     <h1>Sezione SERIE</h1>
                     <h1>Titolo {serie.title}</h1>
                     <img src={`https://image.tmdb.org/t/p/w342/${serie.poster_path}`} alt={serie.name} />
