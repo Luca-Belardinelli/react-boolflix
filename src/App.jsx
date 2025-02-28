@@ -18,8 +18,11 @@ import CountContext from './contexts/CountContext';
 
 function App() {
 
-  // GESTIONE DATS
+  // GESTIONE DATA
   const [films, setFilms] = useState([]);
+
+  // GESTIONE DATA
+  const [series, setSeries] = useState([]);
 
   // VARIABILE PER SALVARE API
   const api_key = "6b952176acd89d0dbbdac68298d2223c";
@@ -38,13 +41,29 @@ function App() {
         setFilms(res.data.results);
       })
 
+
+
+    //gestione chiamate API per le SERIE TV
+    axios.get("https://api.themoviedb.org/3/search/tv", {
+      params: {
+        api_key: api_key,
+        query: query
+      }
+    })
+
+      .then((res) => {
+        setSeries(res.data.results);
+
+
+      })
+
   }
 
-  useEffect(() => fetchFilms(), []);
+  useEffect(() => fetchFilms(''), []);
 
   return (
     <>
-      <CountContext.Provider value={{ films, fetchFilms }}>
+      <CountContext.Provider value={{ films, series, fetchFilms }}>
         <BrowserRouter>
           <Routes>
             <Route element={<DefaultLayout />} >
