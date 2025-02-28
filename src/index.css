@@ -6,21 +6,24 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #434343;
+}
 
 /* REGOLE HEADER */
 
 header {
     background-color: black;
-    color: white;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100px;
 }
 
 
 /* REGOLE MAIN */
 
 .container {
-    display: flex;
-}
-
-.filmcard {
-    width: 100%;
+    color: white;
 }

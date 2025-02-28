@@ -39,8 +39,8 @@ export default function Header() {
                     onChange={handleFormData}
                     placeholder='Cerca'
                 />
+                <button>Cerca</button>
             </form>
-            <button>Cerca</button>
         </header>
     );
 
