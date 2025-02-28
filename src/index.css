@@ -25,5 +25,17 @@ header {
 /* REGOLE MAIN */
 
 .container {
+    width: 80%;
+
+}
+
+
+.filmcard {
+    width: 40%;
+    height: 150px;
     color: white;
+}
+
+img {
+    width: 10%
 }
