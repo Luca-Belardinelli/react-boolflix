@@ -4,7 +4,7 @@ export default function FilmCard(props) {
     const { film } = props;
 
     //VARIABILE GESTIONE BANDIERE
-    const flag = "/flag/Flag_of_Italy.svg"
+    const flag = "/flag/jp.png"
 
     return (
         <div className="container">
