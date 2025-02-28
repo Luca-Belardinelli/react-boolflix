@@ -6,6 +6,7 @@ export default function FilmCard({ film, serie }) {
     //VARIABILE GESTIONE BANDIERE
     const flag = "/flag/jp.png"
 
+
     return (
         <>
 

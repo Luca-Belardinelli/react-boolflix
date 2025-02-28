@@ -25,8 +25,8 @@ export default function FilmList() {
 
             {/* serie */}
             {
-                series.map((series) => (
-                    <Filmcard key={series.id} series={series} />
+                series.map((serie) => (
+                    <Filmcard key={serie.id} serie={serie} />
                 ))
             }
         </>

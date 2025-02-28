@@ -28,7 +28,7 @@ export default function Header() {
 
 
     return (
-        <header>
+        <header className="navbar">
             <h1>BoolFlix</h1>
             <form onSubmit={handleSubmit}>
                 {/* RICERCA */}
